@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "id": "1",
+      "title": "Fanta",
+      "company_name": "Coca-Cola",
+      "price": "15000",
+      "volume": "1.5",
+      "type": "Gazli",
+      "image": "https://dtgxwmigmg3gc.cloudfront.net/imagery/assets/derivations/icon/512/512/true/eyJpZCI6IjYwYTU0YzRmMDhiMzdjYjlhM2I4ZWYwZjE3YWE5Yzg1Iiwic3RvcmFnZSI6InB1YmxpY19zdG9yZSJ9?signature=dd3f8f9408dba6c062e394c617cf71b2313cb30eb6df9a011395c8484c6531c4"
+    },
+    {
+      "title": "Cola",
+      "company_name": "Coca Cola",
+      "price": "13000",
+      "volume": "2",
+      "type": "gazli",
+      "image": "https://niholjoja.uz/wa-data/public/shop/products/59/00/59/images/73/73.970.png",
+      "id": "2c20"
+    }
+  ]
+}
