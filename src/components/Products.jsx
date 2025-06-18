@@ -15,7 +15,8 @@ import {
 } from "antd";
 import { Image } from "antd";
 import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Products = () => {
   const [data, setData] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -85,7 +86,9 @@ const Products = () => {
   const handleAddToCart = (item) => {
     message.success(`Korzinkaga qo‘shildi: ${item.title}`);
   };
-
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
   return (
     <div className="max-w-[1200px] mx-auto px-3 mb-10">
       <div className="flex justify-center my-5">
@@ -107,6 +110,7 @@ const Products = () => {
       <div className="flex flex-wrap gap-6 justify-center">
         {data?.map((item) => (
           <Card
+            data-aos="flip-right"
             hoverable
             key={item.id}
             className="w-[240px] shadow-[0px_0px_10px_3px_#52009d] relative group"
